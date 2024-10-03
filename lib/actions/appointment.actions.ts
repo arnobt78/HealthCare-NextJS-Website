@@ -116,6 +116,20 @@ export const sendSMSNotification = async (userId: string, content: string) => {
   }
 };
 
+// Define the UpdateAppointmentParams type
+interface UpdateAppointmentParams {
+  userId: string;
+  appointmentId: string;
+  appointment: {
+    primaryPhysician: string;
+    schedule: Date;
+    status: Status;
+    cancellationReason?: string;
+  };
+  type: "schedule" | "create" | "cancel";
+  timeZone: string; // Ensure this property is included
+}
+
 //  UPDATE APPOINTMENT
 export const updateAppointment = async ({
   appointmentId,
