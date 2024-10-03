@@ -3,7 +3,7 @@
 
 ## HealthCare-NextJS-Website
 
-HealthCare is a healthcare patient management application using Next.js, Twilio (for SMS notification), TypeScript, TailwindCSS, Shadcn-UI, Zod (for From Validation), Sentry (for Errors and App Observation), CLSX that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, and deployed on Vercel.
+HealthCare is a healthcare patient management application using Next.js, Twilio (for SMS notification), TypeScript, TailwindCSS, Shadcn-UI, Zod (for From Validation), Sentry (to monitor performance and error), CLSX that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, and deployed on Vercel.
 
 **To check the website live, visit:** https://healthcare-arnob.vercel.app/
 
@@ -57,7 +57,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Make sure you have NodeJS installed on your machine first, The installation instructions are here: https://nodejs.org/en/
 
-**Set Up Environment Variables**
+## To Setup .env File For Environment Variables
 
 Create a new file named `.env.local` in the root of your project and add the following content:
 
@@ -74,7 +74,29 @@ NEXT_PUBLIC_BUCKET_ID=
 NEXT_PUBLIC_ADMIN_PASSKEY=123123
 ```
 
-Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the [Appwrite website](https://appwrite.io/).
+> Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the [Appwrite website](https://appwrite.io/).
+
+## About Appwrite Database
+
+Create an account, then create a database `patient-db` then create three collection called `patient`, `doctor`, `appointment`
+
+Attributes of `patient` database: 
+
+`email` (Requried), `phone` (Required), `irerId` (Required), `name` (Required), `privacyConsent` (Boolean: Requried), `gender` (Enum), `birthDate`, `address`, `occupation`, `emergencyContactName`, `emergencyContactNumber`, `insuranceProvider`, `insurancePolicyNumber`, `allergies`, `currentMedication`, `familyMedicalHistory`, `pastMedicalHistory`, `identificationType`, `identificationNumber`, `identificationDocumentId`, `identificationDocumentUrl`, `primaryPhysician`, `treatmentConsent`, `disclosureConsent`
+
+Attributes of `appointment` database: 
+
+First Select as `Many to One Relationship` with `patient` . Then the attributes are: `schedule` (Datetime: Required), `reason` (String: Required), `note`, `primaryPhysician` (String: Required), `status` (Enum: Required), `userId` (String: Required), `cancellationReason` 
+
+> For more info about Appwrite: https://appwrite.io/
+ 
+# To Setup Twilio
+
+You need to create, and an account and get the Account SID, Auth token, Sender number (Generate by Tiwilo) and insert that info into appwrite account inside in your appwrite project under Messaging > Prodivers > Next.js > SMS Notification > then fill those info and save it.
+
+> For Twilio, visit: https://appwrite.io/docs/products/messaging/twilio
+
+> For Sentry, visit: https://sentry.io/welcome/?utm_source=google&utm_medium=cpc&utm_id={20398270056}&utm_campaign=Google_Search_Brand_SentryKW_EMEA-Tier1_Alpha&utm_content=g&utm_term=sentry
 
 ## Code File Snippets
 
