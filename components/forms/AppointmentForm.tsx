@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
@@ -21,6 +21,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { Form } from "../ui/form";
+import React from "react";
 
 export const AppointmentForm = ({
   userId,
@@ -101,6 +102,7 @@ export const AppointmentForm = ({
             cancellationReason: values.cancellationReason,
           },
           type,
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, // Add the timeZone value
         };
 
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
@@ -125,7 +127,7 @@ export const AppointmentForm = ({
       buttonLabel = "Schedule Appointment";
       break;
     default:
-      buttonLabel = "Submit Apppointment";
+      buttonLabel = "Submit Appointment";
   }
 
   return (
@@ -182,7 +184,7 @@ export const AppointmentForm = ({
                 control={form.control}
                 name="reason"
                 label="Appointment reason"
-                placeholder="Annual montly check-up"
+                placeholder="Annual monthly check-up"
                 disabled={type === "schedule"}
               />
 
