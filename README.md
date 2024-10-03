@@ -98,6 +98,8 @@ You need to create, and an account and get the Account SID, Auth token, Sender n
 
 > For Sentry, visit: https://sentry.io/welcome/?utm_source=google&utm_medium=cpc&utm_id={20398270056}&utm_campaign=Google_Search_Brand_SentryKW_EMEA-Tier1_Alpha&utm_content=g&utm_term=sentry
 
+> YouTube Tutorial: https://www.youtube.com/watch?v=lEflo_sc82g
+
 ## Code File Snippets
 
 <details>
