@@ -1,28 +1,61 @@
-## <a name="introduction">🤖 Introduction</a>
 
-A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.
+![Screenshot 2024-10-03 at 17 46 26](https://github.com/user-attachments/assets/cbf4b819-b692-4a40-b422-12638e169e9d) ![Screenshot 2024-10-03 at 18 46 10](https://github.com/user-attachments/assets/751efebd-2026-43bc-a18a-5aaab140228e) ![Screenshot 2024-10-03 at 18 46 23](https://github.com/user-attachments/assets/5498ff6f-91cd-403d-9806-3c4734106bed) ![Screenshot 2024-10-03 at 18 46 38](https://github.com/user-attachments/assets/b86553f6-a70b-446b-a40f-c1c17607d9de) ![Screenshot 2024-10-03 at 18 48 59](https://github.com/user-attachments/assets/46be502e-8f95-40eb-9009-83f3c1a09bcb) ![Screenshot 2024-10-03 at 18 49 57](https://github.com/user-attachments/assets/f07f1475-1038-485d-9e9d-01c5f17451ad) ![Screenshot 2024-10-03 at 18 56 32](https://github.com/user-attachments/assets/47b5d698-56b3-4f73-b8b5-d0c1636f1432) ![Screenshot 2024-10-03 at 20 33 18](https://github.com/user-attachments/assets/45dcb2ed-30f0-4871-b6cc-647799541fe9) ![Screenshot 2024-10-03 at 20 33 49](https://github.com/user-attachments/assets/67e31616-959e-4cf3-9f8c-63717ef14b72)
 
-## <a name="features">🔋 Features</a>
+## HealthCare-NextJS-Website
 
-👉 **Register as a Patient**: Users can sign up and create a personal profile as a patient.
+HealthCare is a healthcare patient management application using Next.js, Twilio (for SMS notification), TypeScript, TailwindCSS, Shadcn-UI, Zod (for From Validation), Sentry (for Errors and App Observation), CLSX that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, and deployed on Vercel.
 
-👉 **Book a New Appointment with Doctor**: Patients can schedule appointments with doctors at their convenience and can book multiple appointments.
+**To check the website live, visit:** https://healthcare-arnob.vercel.app/
 
-👉 **Manage Appointments on Admin Side**: Administrators can efficiently view and handle all scheduled appointments.
+## Features
 
-👉 **Confirm/Schedule Appointment from Admin Side**: Admins can confirm and set appointment times to ensure they are properly scheduled.
+> **Register as a Patient**: Users can sign up and create a personal profile as a patient.
 
-👉 **Cancel Appointment from Admin Side**: Administrators have the ability to cancel any appointment as needed.
+> **Book a New Appointment with Doctor**: Patients can schedule appointments with doctors at their convenience and can book multiple appointments.
 
-👉 **Send SMS on Appointment Confirmation**: Patients receive SMS notifications to confirm their appointment details.
+> **Manage Appointments on Admin Side**: Administrators can efficiently view and handle all scheduled appointments.
 
-👉 **Complete Responsiveness**: The application works seamlessly on all device types and screen sizes.
+> **Confirm/Schedule Appointment from Admin Side**: Admins can confirm and set appointment times to ensure they are properly scheduled.
 
-👉 **File Upload Using Appwrite Storage**: Users can upload and store files securely within the app using Appwrite storage services.
+> **Cancel Appointment from Admin Side**: Administrators have the ability to cancel any appointment as needed.
 
-👉 **Manage and Track Application Performance Using Sentry**: The application uses Sentry to monitor and track its performance and detect any errors.
+> **Send SMS on Appointment Confirmation**: Patients receive SMS notifications to confirm their appointment details.
 
-and many more, including code architecture and reusability
+> **Complete Responsiveness**: The application works seamlessly on all device types and screen sizes.
+
+> **File Upload Using Appwrite Storage**: Users can upload and store files securely within the app using Appwrite storage services.
+
+> **Manage and Track Application Performance Using Sentry**: The application uses Sentry to monitor and track its performance and detect any errors.
+
+## To Install Dependences
+
+Before launching this web application, be sure to install all required dependencies, which are listed in the package.json file.
+
+To install all dependences, run this command from your project folder: `npm install`
+
+## To Run Project
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## To Install NodeJS
+
+Make sure you have NodeJS installed on your machine first, The installation instructions are here: https://nodejs.org/en/
 
 **Set Up Environment Variables**
 
@@ -38,20 +71,12 @@ PATIENT_COLLECTION_ID=
 APPOINTMENT_COLLECTION_ID=
 NEXT_PUBLIC_BUCKET_ID=
 
-NEXT_PUBLIC_ADMIN_PASSKEY=111111
+NEXT_PUBLIC_ADMIN_PASSKEY=123123
 ```
 
 Replace the placeholder values with your actual Appwrite credentials. You can obtain these credentials by signing up on the [Appwrite website](https://appwrite.io/).
 
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="snippets">🕸️ Snippets</a>
+## Code File Snippets
 
 <details>
 <summary><code>tailwind.config.ts</code></summary>
