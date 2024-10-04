@@ -1,4 +1,4 @@
-![Screenshot 2024-10-03 at 17 46 26](https://github.com/user-attachments/assets/cbf4b819-b692-4a40-b422-12638e169e9d) ![Screenshot 2024-10-03 at 18 46 10](https://github.com/user-attachments/assets/751efebd-2026-43bc-a18a-5aaab140228e) ![Screenshot 2024-10-03 at 18 46 23](https://github.com/user-attachments/assets/5498ff6f-91cd-403d-9806-3c4734106bed) ![Screenshot 2024-10-03 at 18 46 38](https://github.com/user-attachments/assets/b86553f6-a70b-446b-a40f-c1c17607d9de) ![Screenshot 2024-10-03 at 18 48 59](https://github.com/user-attachments/assets/46be502e-8f95-40eb-9009-83f3c1a09bcb) ![Screenshot 2024-10-03 at 18 49 57](https://github.com/user-attachments/assets/f07f1475-1038-485d-9e9d-01c5f17451ad) ![Screenshot 2024-10-03 at 18 56 32](https://github.com/user-attachments/assets/47b5d698-56b3-4f73-b8b5-d0c1636f1432) ![Screenshot 2024-10-04 at 03 55 09](https://github.com/user-attachments/assets/205cf346-88cd-42e2-9a4c-476cc09a3b71) ![Screenshot 2024-10-03 at 20 33 18](https://github.com/user-attachments/assets/45dcb2ed-30f0-4871-b6cc-647799541fe9) ![Screenshot 2024-10-03 at 20 33 49](https://github.com/user-attachments/assets/67e31616-959e-4cf3-9f8c-63717ef14b72)
+![Screenshot 2024-10-03 at 17 46 26](https://github.com/user-attachments/assets/cbf4b819-b692-4a40-b422-12638e169e9d) ![Screenshot 2024-10-03 at 18 46 10](https://github.com/user-attachments/assets/751efebd-2026-43bc-a18a-5aaab140228e) ![Screenshot 2024-10-03 at 18 46 23](https://github.com/user-attachments/assets/5498ff6f-91cd-403d-9806-3c4734106bed) ![Screenshot 2024-10-03 at 18 46 38](https://github.com/user-attachments/assets/b86553f6-a70b-446b-a40f-c1c17607d9de) ![Screenshot 2024-10-03 at 18 48 59](https://github.com/user-attachments/assets/46be502e-8f95-40eb-9009-83f3c1a09bcb) ![Screenshot 2024-10-03 at 18 49 57](https://github.com/user-attachments/assets/f07f1475-1038-485d-9e9d-01c5f17451ad) ![Screenshot 2024-10-03 at 18 56 32](https://github.com/user-attachments/assets/47b5d698-56b3-4f73-b8b5-d0c1636f1432) ![Screenshot 2024-10-04 at 03 55 09](https://github.com/user-attachments/assets/205cf346-88cd-42e2-9a4c-476cc09a3b71) ![Screenshot 2024-10-03 at 20 33 18](https://github.com/user-attachments/assets/45dcb2ed-30f0-4871-b6cc-647799541fe9) ![Screenshot 2024-10-03 at 20 33 49](https://github.com/user-attachments/assets/67e31616-959e-4cf3-9f8c-63717ef14b72) ![Screenshot 2024-10-04 at 03 55 09](https://github.com/user-attachments/assets/b7154a72-8328-4759-8456-4b3ef2d472e6)
 
 ## HealthCare-NextJS-Website
 
@@ -98,6 +98,8 @@ You need to create, and an account and get the Account SID, Auth token, Sender n
 > For Sentry, visit: https://sentry.io/welcome/?utm_source=google&utm_medium=cpc&utm_id={20398270056}&utm_campaign=Google_Search_Brand_SentryKW_EMEA-Tier1_Alpha&utm_content=g&utm_term=sentry
 
 > YouTube Tutorial: https://www.youtube.com/watch?v=lEflo_sc82g
+
+> Solving CORS errors with appwrite: https://www.youtube.com/watch?v=oEpRh9H5l5g
 
 ## Code File Snippets
 
