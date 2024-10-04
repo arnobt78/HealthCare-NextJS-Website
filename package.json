@@ -21,6 +21,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@sentry/nextjs": "^8.9.2",
     "@tanstack/react-table": "^8.17.0",
+    "appwrite": "^16.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
