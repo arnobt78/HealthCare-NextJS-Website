@@ -4,12 +4,12 @@ import * as sdk from "node-appwrite";
 declare const process: {
   env: {
     NEXT_PUBLIC_ENDPOINT: string;
-    PROJECT_ID: string;
-    API_KEY: string;
-    DATABASE_ID: string;
-    PATIENT_COLLECTION_ID: string;
-    DOCTOR_COLLECTION_ID: string;
-    APPOINTMENT_COLLECTION_ID: string;
+    NEXT_PUBLIC_PROJECT_ID: string;
+    NEXT_PUBLIC_API_KEY: string;
+    NEXT_PUBLIC_DATABASE_ID: string;
+    NEXT_PUBLIC_PATIENT_COLLECTION_ID: string;
+    NEXT_PUBLIC_DOCTOR_COLLECTION_ID: string;
+    NEXT_PUBLIC_APPOINTMENT_COLLECTION_ID: string;
     NEXT_PUBLIC_BUCKET_ID: string;
   };
 };
@@ -17,18 +17,21 @@ declare const process: {
 //appwrite config
 export const {
   NEXT_PUBLIC_ENDPOINT: ENDPOINT,
-  PROJECT_ID,
-  API_KEY,
-  DATABASE_ID,
-  PATIENT_COLLECTION_ID,
-  DOCTOR_COLLECTION_ID,
-  APPOINTMENT_COLLECTION_ID,
+  NEXT_PUBLIC_PROJECT_ID,
+  NEXT_PUBLIC_API_KEY,
+  NEXT_PUBLIC_DATABASE_ID,
+  NEXT_PUBLIC_PATIENT_COLLECTION_ID,
+  NEXT_PUBLIC_DOCTOR_COLLECTION_ID,
+  NEXT_PUBLIC_APPOINTMENT_COLLECTION_ID,
   NEXT_PUBLIC_BUCKET_ID: BUCKET_ID,
 } = process.env;
 
 const client = new sdk.Client();
 
-client.setEndpoint(ENDPOINT!).setProject(PROJECT_ID!).setKey(API_KEY!);
+client
+  .setEndpoint(ENDPOINT!)
+  .setProject(NEXT_PUBLIC_PROJECT_ID!)
+  .setKey(NEXT_PUBLIC_API_KEY!);
 
 export const databases = new sdk.Databases(client);
 export const users = new sdk.Users(client);

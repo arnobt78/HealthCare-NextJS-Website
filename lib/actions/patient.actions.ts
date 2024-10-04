@@ -4,10 +4,10 @@ import { ID, InputFile, Query } from "node-appwrite";
 
 import {
   BUCKET_ID,
-  DATABASE_ID,
+  NEXT_PUBLIC_DATABASE_ID,
   ENDPOINT,
-  PATIENT_COLLECTION_ID,
-  PROJECT_ID,
+  NEXT_PUBLIC_PATIENT_COLLECTION_ID,
+  NEXT_PUBLIC_PROJECT_ID,
   databases,
   storage,
   users,
@@ -75,13 +75,13 @@ export const registerPatient = async ({
 
     // Create new patient document -> https://appwrite.io/docs/references/cloud/server-nodejs/databases#createDocument
     const newPatient = await databases.createDocument(
-      DATABASE_ID!,
-      PATIENT_COLLECTION_ID!,
+      NEXT_PUBLIC_DATABASE_ID!,
+      NEXT_PUBLIC_PATIENT_COLLECTION_ID!,
       ID.unique(),
       {
         identificationDocumentId: file?.$id ? file.$id : null,
         identificationDocumentUrl: file?.$id
-          ? `${ENDPOINT}/storage/buckets/${BUCKET_ID}/files/${file.$id}/view??project=${PROJECT_ID}`
+          ? `${ENDPOINT}/storage/buckets/${BUCKET_ID}/files/${file.$id}/view??project=${NEXT_PUBLIC_PROJECT_ID}`
           : null,
         ...patient,
       }
@@ -97,8 +97,8 @@ export const registerPatient = async ({
 export const getPatient = async (userId: string) => {
   try {
     const patients = await databases.listDocuments(
-      DATABASE_ID!,
-      PATIENT_COLLECTION_ID!,
+      NEXT_PUBLIC_DATABASE_ID!,
+      NEXT_PUBLIC_PATIENT_COLLECTION_ID!,
       [Query.equal("userId", [userId])]
     );
 
