@@ -6,7 +6,7 @@ HealthCare is a healthcare patient management application using Next.js, Twilio 
 
 **To check the website live, visit:** https://healthcare-arnob.vercel.app/
 
-## Features
+## Project Features
 
 > **Register as a Patient**: Users can sign up and create a personal profile as a patient.
 
